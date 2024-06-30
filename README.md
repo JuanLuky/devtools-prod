@@ -7,7 +7,6 @@ Um projeto Angular 17 para fornecer utilitários de manipulação de texto, incl
 ## 🛠️ Funcionalidades
 
 - **Convert Uppercase and Lowercase:** Converte texto entre maiúsculas e minúsculas.
-- **Remove Accents:** Remove acentos de caracteres em uma string.
 - **Remove Dashes and Dots:** Remove traços e pontos de uma string.
 - **Validate CPF:** Valida se um CPF é válido.
 

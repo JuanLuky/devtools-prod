@@ -14,22 +14,22 @@ import {MatButtonModule} from '@angular/material/button';
 export class ConvertTextComponent {
 
   showResult: boolean = false;
-
+  cleanedText: string = '';
   text: string = '';
 
   convertToUpperCase() {
     this.showResult = true;
-    this.text = this.text.toUpperCase();
+    this.cleanedText = this.text.toUpperCase();
   }
 
   convertToLowerCase() {
     this.showResult = true;
-    this.text = this.text.toLowerCase();
+    this.cleanedText = this.text.toLowerCase();
   }
 
   copyToClipboard() {
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(this.text).then(() => {
+      navigator.clipboard.writeText(this.cleanedText).then(() => {
         alert('Texto copiado para a área de transferência!');
       }).catch(err => {
         console.error('Erro ao copiar texto: ', err);
