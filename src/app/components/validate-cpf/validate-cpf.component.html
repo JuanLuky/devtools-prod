@@ -1,1 +1,26 @@
-<p>validate-cpf works!</p>
+<div class="input-group">
+  <h1>Validador de CPF</h1>
+  <p>Digite um CPF para verificar se é válido.</p>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Digite o CPF</mat-label>
+    <input
+      matInput
+      [(ngModel)]="cpf"
+      (input)="validateCPF()"
+      placeholder="000.000.000-00"
+      maxlength="14"
+    />
+  </mat-form-field>
+
+  <div class="result-group">
+    @if(validationMessage) {
+      <div
+        class="result"
+        [ngClass]="{ valid: isValid, invalid: !isValid }"
+      >
+        {{ validationMessage }}
+      </div>
+    }
+  </div>
+</div>

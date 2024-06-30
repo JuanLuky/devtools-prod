@@ -1,0 +1,60 @@
+.input-group {
+  margin: auto;
+  width: 80%;
+  margin-top: 30px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #122740;
+
+  h1 {
+    margin: 0;
+  }
+
+  .btn-group {
+    display: flex;
+    gap: 20px;
+    @media (max-width: 450px) {
+      gap: 10px;
+    }
+  }
+  .btn {
+    padding: 20px 30px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: #209dd8;
+    color: white;
+    cursor: pointer;
+
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
+  }
+
+  .result-group {
+    overflow: hidden;
+    background-color: #172f4d;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+
+    .result {
+      margin: 0 20px;
+      padding: 10px;
+    }
+
+  }
+  .valid {
+    font-size: 18px;
+    color: green;
+  }
+
+  .invalid {
+    font-size: 18px;
+    color: red;
+  }
+}
