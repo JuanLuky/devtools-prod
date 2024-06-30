@@ -1,8 +1,8 @@
-# 🔠 Text Utilities - Angular
+# 🔠 Dev Utilities - Angular
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Um projeto Angular para fornecer utilitários de manipulação de texto, incluindo conversão de caixa, remoção de acentos, remoção de traços e pontos, e validação de CPF.
+Um projeto Angular 17 para fornecer utilitários de manipulação de texto, incluindo conversão de caixa, remoção de acentos, remoção de traços e pontos, e validação de CPF.
 
 ## 🛠️ Funcionalidades
 
@@ -16,8 +16,8 @@ Um projeto Angular para fornecer utilitários de manipulação de texto, incluin
 ### Clone o Repositório
 
 ```bash
-git clone https://github.com/juanluky/devtools-prod.git
-cd text-utilities-angular
+git clone https://github.com/JuanLuky/devtools-prod.git
+cd devtools-prod
 ```
 
 ### Instale as Dependências
