@@ -7,6 +7,10 @@
   flex-direction: column;
   background-color: #122740;
 
+  h1 {
+    margin: 0;
+  }
+
   .btn-group {
     display: flex;
     gap: 20px;
@@ -24,17 +28,15 @@
   }
 
   .result-group {
-    padding: 0 10px;
     background-color: #172f4d;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
     display: flex;
-    gap: 20px;
+    text-align: center;
 
     .result {
       padding: 20px 20px;
-      text-align: center;
       flex-grow: 1;
     }
 

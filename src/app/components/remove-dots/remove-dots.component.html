@@ -1,1 +1,27 @@
-<p>remove-dots works!</p>
+<div class="input-group">
+  <h1>Remover Pontos, Traços e Espaços</h1>
+  <p>
+    Use esta ferramenta para remover pontos, traços e espaços em branco do
+    texto.
+  </p>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Digite aqui...</mat-label>
+    <textarea matInput [(ngModel)]="text" ></textarea>
+  </mat-form-field>
+
+  <div class="btn-group" role="group">
+    <button class="btn" mat-raised-button type="button" (click)="cleanText()">
+      Remover
+    </button>
+    <button class="btn" mat-raised-button type="button" (click)="copyToClipboard()">
+      Copiar
+    </button>
+  </div>
+
+  <div class="result-group">
+    @if(showResult) {
+    <h1 class="result">{{ cleanedText }}</h1>
+    }
+  </div>
+</div>

@@ -13,13 +13,17 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class ConvertTextComponent {
 
+  showResult: boolean = false;
+
   text: string = '';
 
   convertToUpperCase() {
+    this.showResult = true;
     this.text = this.text.toUpperCase();
   }
 
   convertToLowerCase() {
+    this.showResult = true;
     this.text = this.text.toLowerCase();
   }
 

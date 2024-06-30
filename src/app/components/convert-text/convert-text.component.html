@@ -10,11 +10,11 @@
   <div class="btn-group" role="group">
     <button class="btn" mat-raised-button type="button" (click)="convertToUpperCase()">Maiúsculas</button>
     <button class="btn" mat-raised-button type="button" (click)="convertToLowerCase()">Minúsculas</button>
+    <button class="btn" mat-raised-button type="button" (click)="copyToClipboard()">Copiar</button>
 
   </div>
 
   <div class="result-group">
-      <h1 class="result">{{ text }}</h1>
-    <button class="btn" mat-raised-button type="button" (click)="copyToClipboard()">Copiar</button>
+    @if(showResult) {<h1 class="result">{{ text }}</h1>}
   </div>
 </div>
