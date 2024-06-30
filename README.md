@@ -1,27 +1,63 @@
-# DevtoolsProd
+# 🔠 Text Utilities - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-## Development server
+Um projeto Angular para fornecer utilitários de manipulação de texto, incluindo conversão de caixa, remoção de acentos, remoção de traços e pontos, e validação de CPF.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠️ Funcionalidades
 
-## Code scaffolding
+- **Convert Uppercase and Lowercase:** Converte texto entre maiúsculas e minúsculas.
+- **Remove Accents:** Remove acentos de caracteres em uma string.
+- **Remove Dashes and Dots:** Remove traços e pontos de uma string.
+- **Validate CPF:** Valida se um CPF é válido.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Como Usar
 
-## Build
+### Clone o Repositório
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+git clone https://github.com/juanluky/devtools-prod.git
+cd text-utilities-angular
+```
 
-## Running unit tests
+### Instale as Dependências
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm install
+```
 
-## Running end-to-end tests
+### Execute a Aplicação
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng serve
+```
 
-## Further help
+Acesse `http://localhost:4200/` em seu navegador.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 📂 Estrutura do Projeto
+
+```plaintext
+/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   ├── convert-text/
+│   │   │   ├── convert-text.component.html
+│   │   │   ├── convert-text.component.scss
+│   │   │   ├── convert-text.component.spec.ts
+│   │   │   └── convert-text.component.ts
+│   ├── assets/
+│   ├── environments/
+│   ├── index.html
+│   ├── main.ts
+│   ├── styles.css
+│   └── ...
+├── angular.json
+├── package.json
+└── README.md
+```
+## 💬 Contato
+
+Para dúvidas ou sugestões, entre em contato através do email: `juan.santos@grupomateus.com`.
+
+---
