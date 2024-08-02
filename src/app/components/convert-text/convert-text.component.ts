@@ -27,6 +27,11 @@ export class ConvertTextComponent {
     this.cleanedText = this.text.toLowerCase();
   }
 
+  removeAccents() {
+    this.showResult = true;
+    this.cleanedText = this.text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleUpperCase();
+  }
+
   copyToClipboard() {
     if (navigator.clipboard) {
       navigator.clipboard.writeText(this.cleanedText).then(() => {

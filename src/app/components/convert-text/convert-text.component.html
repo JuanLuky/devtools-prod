@@ -10,8 +10,8 @@
   <div class="btn-group" role="group">
     <button [disabled]="!text" class="btn" mat-raised-button type="button" (click)="convertToUpperCase()">Maiúsculas</button>
     <button [disabled]="!text" class="btn" mat-raised-button type="button" (click)="convertToLowerCase()">Minúsculas</button>
+    <button [disabled]="!text" class="btn" mat-raised-button type="button" (click)="removeAccents()">Remover Acentos</button>
     <button [disabled]="!text" class="btn" mat-raised-button type="button" (click)="copyToClipboard()">Copiar</button>
-
   </div>
 
   <div class="result-group">
