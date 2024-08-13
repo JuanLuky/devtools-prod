@@ -1,20 +1,57 @@
 <div class="input-group">
   <h1>Converter Maiúsculas e Minúsculas</h1>
-  <p>Transformar textos para maiúsculas ou para minúsculas? Basta usar nossa ferramenta.</p>
+  <p>
+    Transformar textos para maiúsculas ou para minúsculas? Basta usar nossa
+    ferramenta.
+  </p>
 
   <mat-form-field class="example-full-width">
     <mat-label>Digitar aqui...</mat-label>
-    <textarea matInput [(ngModel)]="text" ></textarea>
+    <textarea matInput [(ngModel)]="text"></textarea>
   </mat-form-field>
 
   <div class="btn-group" role="group">
-    <button [disabled]="!text" class="btn" mat-raised-button type="button" (click)="convertToUpperCase()">Maiúsculas</button>
-    <button [disabled]="!text" class="btn" mat-raised-button type="button" (click)="convertToLowerCase()">Minúsculas</button>
-    <button [disabled]="!text" class="btn" mat-raised-button type="button" (click)="removeAccents()">Remover Acentos</button>
-    <button [disabled]="!text" class="btn" mat-raised-button type="button" (click)="copyToClipboard()">Copiar</button>
+    <button
+      [disabled]="!text"
+      class="btn"
+      mat-raised-button
+      type="button"
+      (click)="convertToUpperCase()"
+    >
+      Maiúsculas
+    </button>
+    <button
+      [disabled]="!text"
+      class="btn"
+      mat-raised-button
+      type="button"
+      (click)="convertToLowerCase()"
+    >
+      Minúsculas
+    </button>
+    <button
+      [disabled]="!text"
+      class="btn"
+      mat-raised-button
+      type="button"
+      (click)="removeAccents()"
+    >
+      Remover Acentos
+    </button>
+    <button
+      [disabled]="!text"
+      class="btn"
+      mat-raised-button
+      type="button"
+      (click)="copyToClipboard()"
+    >
+      Copiar
+    </button>
   </div>
 
-  <div class="result-group">
-    @if(showResult) {<h1 class="result">{{ cleanedText }}</h1>}
-  </div>
+  @if(showResult) {
+    <div class="result-group">
+      <h1 class="result">{{ cleanedText }}</h1>
+    </div>
+  }
 </div>
