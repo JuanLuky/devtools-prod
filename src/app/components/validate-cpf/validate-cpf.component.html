@@ -13,14 +13,11 @@
     />
   </mat-form-field>
 
+  @if(validationMessage) {
   <div class="result-group">
-    @if(validationMessage) {
-      <div
-        class="result"
-        [ngClass]="{ valid: isValid, invalid: !isValid }"
-      >
-        {{ validationMessage }}
-      </div>
-    }
+    <div class="result" [ngClass]="{ valid: isValid, invalid: !isValid }">
+      {{ validationMessage }}
+    </div>
   </div>
+  }
 </div>
