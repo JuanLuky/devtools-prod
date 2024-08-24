@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   background-color: #122740;
+  margin-bottom: 30px;
 
   h1 {
     margin: 0;
@@ -19,18 +20,11 @@
     }
   }
   .btn {
-    padding: 20px 30px;
-    display: flex;
+    margin-top: 16px;
+    padding: 12px;
     font-size: 16px;
-    align-items: center;
-    justify-content: center;
     background-color: #209dd8;
     color: white;
-    cursor: pointer;
-
-    @media (max-width: 450px) {
-      font-size: 12px;
-    }
   }
 
   .result-group {
@@ -38,7 +32,6 @@
     background-color: #172f4d;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
     display: flex;
     text-align: center;
     border: 1px solid #209dd8;
@@ -52,7 +45,7 @@
   }
   .valid {
     font-size: 18px;
-    color: green;
+    color: rgb(9, 190, 9);
   }
 
   .invalid {

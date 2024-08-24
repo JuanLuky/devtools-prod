@@ -9,7 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
   standalone: true,
   imports: [FormsModule, MatFormFieldModule, MatInputModule, MatButtonModule],
   templateUrl: './convert-text.component.html',
-  styleUrl: './convert-text.component.scss'
+  styleUrl: './convert-text.component.scss',
 })
 export class ConvertTextComponent {
 
@@ -30,6 +30,12 @@ export class ConvertTextComponent {
   removeAccents() {
     this.showResult = true;
     this.cleanedText = this.text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleUpperCase();
+  }
+
+  cleanText() {
+    this.text = '';
+    this.cleanedText = '';
+    this.showResult = false;
   }
 
   copyToClipboard() {

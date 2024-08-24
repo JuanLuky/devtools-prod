@@ -59,4 +59,9 @@ export class ValidateCpfComponent {
     this.isValid = firstDigit === cpfArray[9] && secondDigit === cpfArray[10];
     this.validationMessage = this.isValid ? 'CPF válido!' : 'CPF inválido.';
   }
+
+  cleanText() {
+    this.validationMessage = '';
+    this.cpf = '';
+  }
 }

@@ -16,9 +16,15 @@ export class RemoveDotsComponent {
   cleanedText: string = '';
   showResult: boolean = false;
 
-  cleanText() {
+  removeDotsText() {
     this.showResult = true;
     this.cleanedText = this.text.replace(/[.,\/\-\s]/g, '');
+  }
+
+  cleanText() {
+    this.text = '';
+    this.cleanedText = '';
+    this.showResult = false;
   }
 
   copyToClipboard() {

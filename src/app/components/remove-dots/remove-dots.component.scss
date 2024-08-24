@@ -33,7 +33,20 @@
     }
   }
 
+  .result-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .btn {
+      padding: 12px;
+      font-size: 16px;
+      background-color: #209dd8;
+      color: white;
+    }
+
   .result-group {
+    flex: 1;
     overflow: hidden;
     background-color: #172f4d;
     align-items: center;
@@ -43,11 +56,11 @@
     text-align: center;
     border: 1px solid #209dd8;
 
-
     .result {
       margin: 0 20px;
       padding: 10px;
     }
 
   }
+}
 }
