@@ -11,6 +11,11 @@
     margin: 0;
   }
 
+  .clean {
+    background-color: #ffea28 !important;
+    color: black !important;
+  }
+  
   .btn-group {
     display: flex;
     gap: 20px;
@@ -24,10 +29,7 @@
     background-color: #209dd8;
     color: white;
   }
-  .clean {
-    background-color: #ffea28 !important;
-    color: black !important;
-  }
+
 
   .result-group-container {
       display: flex;

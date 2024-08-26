@@ -33,6 +33,11 @@
     }
   }
 
+  .clean {
+    background-color: #ffea28 !important;
+    color: black !important;
+  }
+  
   .result-group-container {
     display: flex;
     flex-direction: column;
@@ -44,6 +49,7 @@
       background-color: #209dd8;
       color: white;
     }
+    
 
   .result-group {
     flex: 1;
