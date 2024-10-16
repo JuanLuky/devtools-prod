@@ -20,31 +20,35 @@
     >
       Remover
     </button>
-    <button
-      [disabled]="!cleanedText"
-      class="btn"
-      mat-raised-button
-      type="button"
-      (click)="copyToClipboard()"
-    >
-      Copiar
-    </button>
   </div>
 
   @if(showResult) {
-    <div class="result-group-container">
-      <div class="result-group">
-        <h1 class="result">{{ cleanedText }}</h1>
-      </div>
-      <button
-            [disabled]="!text"
-            class="btn clean" 
-            mat-raised-button
-            type="button"
-            (click)="cleanText()"
-          >
-            Limpar
-          </button>
+  <div class="result-group-container">
+    <div class="result-group">
+      <h1 class="result">{{ cleanedText }}</h1>
     </div>
+
+    <div class="content-btn">
+      <button
+        [disabled]="!cleanedText"
+        class="btn"
+        mat-raised-button
+        type="button"
+        (click)="copyToClipboard()"
+      >
+        Copiar
+      </button>
+
+      <button
+        [disabled]="!text"
+        class="btn clean"
+        mat-raised-button
+        type="button"
+        (click)="cleanText()"
+      >
+        Limpar
+      </button>
+    </div>
+  </div>
   }
 </div>

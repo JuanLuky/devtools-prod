@@ -43,6 +43,12 @@
         color: white;
       }
 
+      .content-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
     .result-group {
       flex: 1;
       overflow: hidden;

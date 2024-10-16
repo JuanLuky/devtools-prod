@@ -50,23 +50,28 @@
       color: white;
     }
     
-
-  .result-group {
-    flex: 1;
-    overflow: hidden;
-    background-color: #172f4d;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    display: flex;
-    text-align: center;
-    border: 1px solid #209dd8;
-
-    .result {
-      margin: 0 20px;
-      padding: 10px;
+    .content-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
+    .result-group {
+      flex: 1;
+      overflow: hidden;
+      background-color: #172f4d;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      display: flex;
+      text-align: center;
+      border: 1px solid #209dd8;
+
+      .result {
+        margin: 0 20px;
+        padding: 10px;
+      }
+
+    }
   }
-}
 }
