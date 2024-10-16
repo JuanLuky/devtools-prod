@@ -1,12 +1,15 @@
 # 🔠 Dev Utilities - Angular
 
+## Link 🌐
+`https://utilitiestools-prod.vercel.app/`
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Um projeto Angular 17 para fornecer utilitários de manipulação de texto, incluindo conversão de caixa, remoção de acentos, remoção de traços e pontos, e validação de CPF.
 
 ## 🛠️ Funcionalidades
 
-- **Convert Uppercase and Lowercase:** Converte texto entre maiúsculas e minúsculas.
+- **Convert Uppercase, Lowercase and Remove Accent:** Converte texto entre maiúsculas, minúsculas e Remove Acentos.
 - **Remove Dashes and Dots:** Remove traços e pontos de uma string.
 - **Validate CPF:** Valida se um CPF é válido.
 
